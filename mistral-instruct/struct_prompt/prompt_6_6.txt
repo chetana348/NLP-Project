@@ -1,0 +1,40 @@
+Perform the calculation: Add two numbers by breaking the task into smaller parts. Decompose this addition into smaller parts, adding each corresponding set of digits separately. Show each step of your calculation clearly, and provide the final sum as a single, definitive answer. Ensure that each step is accurately calculated and presented in a clear, orderly manner. An example of this task is shown here:
+
+BEGIN EXAMPLE
+Input:
+Number 1: 456789, Number 2: 123456
+
+Response:
+To calculate the sum of 456789 and 123456, we will align the digits correctly and decompose the addition into smaller parts. The numbers aligned are:
+
+456789
++123456
+------
+The process of calculating each subtotal is as follows:
+
+Units place: 9 (from 456789) + 6 (from 123456) = 15 (carry 1 to the next place)
+Tens place: 8 (from 456789) + 5 (from 123456) + 1 (carried over) = 14 (carry 1 to the next place)
+Hundreds place: 7 (from 456789) + 4 (from 123456) + 1 (carried over) = 12 (carry 1 to the next place)
+Thousands place: 6 (from 456789) + 3 (from 123456) + 1 (carried over) = 10 (carry 1 to the next place)
+Ten-thousands place: 5 (from 456789) + 2 (from 123456) + 1 (carried over) = 8
+Hundred-thousands place: 4 (from 456789) + 1 (from 123456) = 5
+Now, we add the subtotals together to find the final sum:
+
+Units place: 5
+Tens place: 40
+Hundreds place: 200
+Thousands place: 10000
+Ten-thousands place: 80000
+Hundred-thousands place: 500000
+Adding these subtotals together:
+5 + 40 + 200 + 10000 + 80000 + 500000 = 580245
+
+Therefore, the sum of 456789 and 123456 is 580245.
+END EXAMPLE
+
+Add the following two numbers as shown in the example:
+
+Input:
+Number 1: {num1}, Number 2: {num2}
+
+Response:
