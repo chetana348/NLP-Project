@@ -8,21 +8,21 @@ See the [Algorithm](#Algorithm) section for an explanation of the inner mechanic
 
 Install the required packages using `pip install -r requirements.txt`.
 
-Customize `train.py` based on your requirements and edit the following lines:
+Customize `Train and Test.ipynb` based on your requirements and edit the following lines:
 
-* Edit `gpus=` to the number of GPUs on your machine.
+* Edit `devices=` to the number of GPUs on your machine.
 * Edit `batch_size=` (16 is the default) to fit the memory size of your GPU.
 * Adjust `accumulate_grad_batches=` (8 is the default) accordingly to control the effective batch size. It was observed that larger batch sizes train faster and more stable.
 * Optional argument is `resume_from_checkpoint` to resume training from a previous checkpoint. PyTorch Lightning should automatically save checkpoints during training.
 * Also adjust the hyperparameters in `main.py` as needed. 
 
-Then run `python train.py` It takes around 100 epochs (10000000 samples) to converge, at which point it should reach 100% accuracy.
+Then run the training cell. It takes around 100 epochs (10000000 samples) to converge, at which point it should reach 100% accuracy.
 
 ## Testing
 
-Edit test.py to the path of your model or pre-trained model (best_model. kept).
+Edit the testing cell of `Train and Test.ipynb` to the path of your model or pre-trained model (best_model. kept).
 
-Run `python test.py` and give it prompts in the format of `xxxxx*xxxxx;`. The first digit must not be zero. For example: `12345*54321;`.
+Give it prompts in the format of `xxxxx*xxxxx;`. The first digit must not be zero. For example: `12345*54321;`.
 
 
 ## Algorithm
