@@ -20,7 +20,7 @@ Then run the training cell. It takes around 100 epochs (10000000 samples) to con
 
 ## Testing
 
-Edit the testing cell of `Train and Test.ipynb` to the path of your model or pre-trained model (best_model. kept).
+Edit the testing cell of `Train and Test.ipynb` to the path of your model or pre-trained model (best_model. ckpt).
 
 Give it prompts in the format of `xxxxx*xxxxx;`. The first digit must not be zero. For example: `12345*54321;`.
 
