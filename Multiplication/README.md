@@ -38,11 +38,7 @@ x  96
  3744
 ```
 
-Multiplications can be computed vertically. We first decompose the multiplier into digits, and multiply each digit by the multiplicand, then we shift these results by the position of the digit and sum them together. There are two things left to do:
-
-* Single digit multiplication. In the above example we need to compute `39*6=234` and `39*9=351`. This is again done by decomposing the *multiplicand* into digits, mutiply each digit by the multiplier, and sum them together. The last unit of computation, single-digit by single-digit multiplication, can be done by looking up the [multiplication table](https://en.wikipedia.org/wiki/Multiplication_table).
-
-* While the process of summing up the inputs may seem trivial, the GPT-3 model is known to struggle with multi-operation arithmetic (see "Single Digit Three Ops" performance in the original GPT-3 paper). We need to break it up, and compute the sum of  two numbers at a time. We compute the number from right to left, and compute the carry first and then the actual digit. To make the task even easier for the model, the model finds the appropriate digit first and then computes the carry digit and the ones digit, so it doesn't have to worry about where to find the digits to perform the operation. When the two numbers are of differing number of digits, the missing digits are supplied with zero. However, the operation does not stop when the digits of both numbers are used up, since the most significant digit can be carried, like `9999+101`. Instead, the operation stops when the two digits and the carry are all zero. The sequence for `9999+101` looks like: (spaces added for clarity, they don't exist in actual training samples)
+Multiplications can be computed vertically. We first decompose the multiplier into digits, and multiply each digit by the multiplicand, then we shift these results by the position of the digit and sum them together. In the above example we need to compute `39*6=234` and `39*9=351`. This is again done by decomposing the *multiplicand* into digits, mutiply each digit by the multiplier, and sum them together. The last unit of computation, single-digit by single-digit multiplication, can be done by looking up the [multiplication table](https://en.wikipedia.org/wiki/Multiplication_table). The sequence for `9999+101` looks like: (spaces added for clarity, they don't exist in actual training samples)
 
   ```
   9999+101;9100 9010 9111 9010 0011 000=10100
