@@ -59,7 +59,7 @@ You can try our model in the Colab environment [here](https://drive.google.com/f
 
 ## References
 Most of the source code is adapted and modified to our use case from the following sources:
-      - https://github.com/jlrussin/interpret-math-transformer
-      - https://github.com/graykode/gpt-2-Pytorch
-      - https://github.com/hyunwoongko/transformer
+      * https://github.com/jlrussin/interpret-math-transformer
+      * https://github.com/graykode/gpt-2-Pytorch
+      * https://github.com/hyunwoongko/transformer
 
