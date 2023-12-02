@@ -3,3 +3,5 @@ Team: Jack R Wimbish and Chetana Krishnan
 # Team Contributions:
    - Jack: Finetuning Mistral
    - Chetana - GPT2 Addition and Multiplication
+
+Please navigate to specifc folder for specific instructions on running the code. 
