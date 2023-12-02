@@ -54,4 +54,12 @@ The full sequence for `39*96` is:
 39*96;39*6;9*6;=54;3*6;=18;5+18;58030112000=23;=234;39*9;9*9;=81;3*9;=27;8+27;87050213000=35;=351;23+351;310425070303000=374;=3744$
 ```
 
-You can try our model in the Colab environment [here].(
+## Try our Model
+You can try our model in the Colab environment [here].(https://drive.google.com/file/d/1oA-ejUXyDzRS-mYgMPnzFljUzqnpDO2C/view?usp=sharing). Run the cells in order and observe the model run. 
+
+## References
+Most of the source code is adapted and modified to our use case from the following sources:
+      - https://github.com/jlrussin/interpret-math-transformer
+      - https://github.com/graykode/gpt-2-Pytorch
+      - https://github.com/hyunwoongko/transformer
+
