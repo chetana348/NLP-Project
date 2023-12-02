@@ -55,7 +55,7 @@ The full sequence for `39*96` is:
 ```
 
 ## Try our Model
-You can try our model in the Colab environment [here].(https://drive.google.com/file/d/1oA-ejUXyDzRS-mYgMPnzFljUzqnpDO2C/view?usp=sharing). Run the cells in order and observe the model run. 
+You can try our model in the Colab environment [here](https://drive.google.com/file/d/1oA-ejUXyDzRS-mYgMPnzFljUzqnpDO2C/view?usp=sharing). Run the cells in order and observe the model run. 
 
 ## References
 Most of the source code is adapted and modified to our use case from the following sources:
