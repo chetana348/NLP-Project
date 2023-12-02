@@ -1,0 +1,42 @@
+Perform the calculation: Add two numbers by breaking the task into smaller parts. Decompose this addition into smaller parts, adding each corresponding set of digits separately. Show each step of your calculation clearly, and provide the final sum as a single, definitive answer. Ensure that each step is accurately calculated and presented in a clear, orderly manner. An example of this task is shown here:
+
+BEGIN EXAMPLE
+Input:
+Number 1: 864321, Number 2: 5
+
+Response:
+To calculate the sum of 864321 and 5, we will align the digits correctly and decompose the addition into smaller parts. The numbers aligned are:
+
+markdown
+Copy code
+864321
++     5
+------
+The process of calculating each subtotal is as follows:
+
+Units place: 1 (from 864321) + 5 (from 5) = 6
+Tens place: 2 (from 864321) = 2 (no corresponding digit in 5)
+Hundreds place: 3 (from 864321) = 3 (no corresponding digit in 5)
+Thousands place: 4 (from 864321) = 4 (no corresponding digit in 5)
+Ten-thousands place: 6 (from 864321) = 6 (no corresponding digit in 5)
+Hundred-thousands place: 8 (from 864321) = 8 (no corresponding digit in 5)
+Now, we add the subtotals together to find the final sum:
+
+Units place: 6
+Tens place: 20
+Hundreds place: 300
+Thousands place: 4000
+Ten-thousands place: 60000
+Hundred-thousands place: 800000
+Adding these subtotals together:
+6 + 20 + 300 + 4000 + 60000 + 800000 = 864326
+
+Therefore, the sum of 864321 and 5 is 864326.
+END EXAMPLE
+
+Add the following two numbers as shown in the example:
+
+Input:
+Number 1: {num1}, Number 2: {num2}
+
+Response:

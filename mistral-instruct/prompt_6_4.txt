@@ -1,0 +1,40 @@
+Perform the calculation: Add two numbers by breaking the task into smaller parts. Decompose this addition into smaller parts, adding each corresponding set of digits separately. Show each step of your calculation clearly, and provide the final sum as a single, definitive answer. Ensure that each step is accurately calculated and presented in a clear, orderly manner. An example of this task is shown here:
+
+BEGIN EXAMPLE
+Input:
+Number 1: 695142, Number 2: 3876
+
+Response:
+To calculate the sum of 695142 and 3876, we will align the digits correctly and decompose the addition into smaller parts. The numbers aligned are:
+
+695142
++  3876
+------
+The process of calculating each subtotal is as follows:
+
+Units place: 2 (from 695142) + 6 (from 3876) = 8
+Tens place: 4 (from 695142) + 7 (from 3876) = 11 (carry 1 to the next place)
+Hundreds place: 1 (from 695142) + 8 (from 3876) + 1 (carried over) = 10 (carry 1 to the next place)
+Thousands place: 5 (from 695142) + 3 (from 3876) + 1 (carried over) = 9
+Ten-thousands place: 9 (from 695142) = 9 (no corresponding digit in 3876)
+Hundred-thousands place: 6 (from 695142) = 6 (no corresponding digit in 3876)
+Now, we add the subtotals together to find the final sum:
+
+Units place: 8
+Tens place: 10
+Hundreds place: 100
+Thousands place: 9000
+Ten-thousands place: 90000
+Hundred-thousands place: 600000
+Adding these subtotals together:
+8 + 10 + 100 + 9000 + 90000 + 600000 = 699018
+
+Therefore, the sum of 695142 and 3876 is 699018.
+END EXAMPLE
+
+Add the following two numbers as shown in the example:
+
+Input:
+Number 1: {num1}, Number 2: {num2}
+
+Response:

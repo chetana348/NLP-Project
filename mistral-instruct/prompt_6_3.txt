@@ -1,0 +1,40 @@
+Perform the calculation: Add two numbers by breaking the task into smaller parts. Decompose this addition into smaller parts, adding each corresponding set of digits separately. Show each step of your calculation clearly, and provide the final sum as a single, definitive answer. Ensure that each step is accurately calculated and presented in a clear, orderly manner. An example of this task is shown here:
+
+BEGIN EXAMPLE
+Input:
+Number 1: 582139, Number 2: 413
+
+Response:
+To calculate the sum of 582139 and 413, we will align the digits correctly and decompose the addition into smaller parts. The numbers aligned are:
+
+582139
++   413
+------
+The process of calculating each subtotal is as follows:
+
+Units place: 9 (from 582139) + 3 (from 413) = 12 (carry 1 to the next place)
+Tens place: 3 (from 582139) + 1 (from 413) + 1 (carried over) = 5
+Hundreds place: 1 (from 582139) + 4 (from 413) = 5
+Thousands place: 2 (from 582139) = 2 (no corresponding digit in 413)
+Ten-thousands place: 8 (from 582139) = 8 (no corresponding digit in 413)
+Hundred-thousands place: 5 (from 582139) = 5 (no corresponding digit in 413)
+Now, we add the subtotals together to find the final sum:
+
+Units place: 2
+Tens place: 50
+Hundreds place: 500
+Thousands place: 2000
+Ten-thousands place: 80000
+Hundred-thousands place: 500000
+Adding these subtotals together:
+2 + 50 + 500 + 2000 + 80000 + 500000 = 582552
+
+Therefore, the sum of 582139 and 413 is 582552.
+END EXAMPLE
+
+Add the following two numbers as shown in the example:
+
+Input:
+Number 1: {num1}, Number 2: {num2}
+
+Response:

@@ -1,0 +1,40 @@
+Perform the calculation: Add two numbers by breaking the task into smaller parts. Decompose this addition into smaller parts, adding each corresponding set of digits separately. Show each step of your calculation clearly, and provide the final sum as a single, definitive answer. Ensure that each step is accurately calculated and presented in a clear, orderly manner. An example of this task is shown here:
+
+BEGIN EXAMPLE
+Input:
+Number 1: 758942, Number 2: 37
+
+Response:
+To calculate the sum of 758942 and 37, we will align the digits correctly and decompose the addition into smaller parts. The numbers aligned are:
+
+758942
++    37
+------
+The process of calculating each subtotal is as follows:
+
+Units place: 2 (from 758942) + 7 (from 37) = 9
+Tens place: 4 (from 758942) + 3 (from 37) = 7
+Hundreds place: 9 (from 758942) = 9 (no corresponding digit in 37)
+Thousands place: 8 (from 758942) = 8 (no corresponding digit in 37)
+Ten-thousands place: 5 (from 758942) = 5 (no corresponding digit in 37)
+Hundred-thousands place: 7 (from 758942) = 7 (no corresponding digit in 37)
+Now, we add the subtotals together to find the final sum:
+
+Units place: 9
+Tens place: 70
+Hundreds place: 900
+Thousands place: 8000
+Ten-thousands place: 50000
+Hundred-thousands place: 700000
+Adding these subtotals together:
+9 + 70 + 900 + 8000 + 50000 + 700000 = 758979
+
+Therefore, the sum of 758942 and 37 is 758979.
+END EXAMPLE
+
+Add the following two numbers as shown in the example:
+
+Input:
+Number 1: {num1}, Number 2: {num2}
+
+Response:
