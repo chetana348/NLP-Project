@@ -1,14 +1,14 @@
-# Addition with Mistral Instruct
+# Addition With Mistral Instruct
 
 This folder contains the code to run addition trials and evaluate results for the Mistral Instruct base model, the base model using a structured one-shot prompt, and a fine-tuned model. All .ipynb files are meant to be run on a Jupyter notebook on a GPU-enabled node on Cheaha with a conda kernel. Commands to install the needed python libraries are included, so start with a new conda environment for best results.
 
 ## Base Model
 
-The code to generate trial prompts, run them through Mistral Instruct, and evaluate the results for accuracy is all contained in `mistral_math_rawmodel.ipynb`. All prompts and responses are recorded in the folder results_raw, which will be created when the trials are run.
+The code to generate trial prompts, run them through Mistral Instruct, and evaluate the results for accuracy is all contained in `mistral_math_rawmodel.ipynb`. All prompts and responses are recorded in the folder `results_raw`, which will be created when the trials are run.
 
-## Base Model with One-Shot Structured Prompts
+## Base Model With One-Shot Structured Prompts
 
-The code to generate trial prompts, run them through Mistral Instruct, and evaluate the results for accuracy is all contained in `mistral_math_structprompt.ipynb`. All prompts and responses are recorded in the folder results_struct_prompt, which will be created when the trials are run. The text files prompt_6_1.txt through prompt_6_6.txt contain the one-shot prompt templates for operands having a 6 digit LHS and a 1-6 digit RHS.
+The code to generate trial prompts, run them through Mistral Instruct, and evaluate the results for accuracy is all contained in `mistral_math_structprompt.ipynb`. All prompts and responses are recorded in the folder `results_struct_prompt`, which will be created when the trials are run. The text files `prompt_6_1.txt` through `prompt_6_6.txt` contain the one-shot prompt templates for operands having a 6 digit LHS and a 1-6 digit RHS.
 
 ## Fine-Tuned With Generated Data
 
