@@ -14,5 +14,5 @@ The code to generate trial prompts, run them through Mistral Instruct, and evalu
 
 The code to generate the training and validation datasets is in `generate_training.py`. `finetune_dataset.jsonl` and `finetune_dataset_val.jsonl` are the results of running `generate_training.py`, though you can run it again to generate fresh data if you wish. The code to fine-tune the model, run inference on the fine-tuned model, and evaluate the results for accuracy is in `math_finetune_cheaha.ipynb`. Checkpoint LoRA adapters will be saved in the folder `mistral-math-finetune`.
 
-The code in here uses a batch size of 2, which could probably be safely increased, and runs for 500 epochs. The first time I ran this code I didn't see loss decreasing past the checkpoint at 325, but the second time both training and validation losses seemed t obe slowly decreasing even at checkpoint 500, so running for more training epochs may produce better results.
+The code in here uses a batch size of 2, which could probably be safely increased, and runs for 500 epochs. The first time I ran this code I didn't see loss decreasing past the checkpoint at 325, but the second time both training and validation losses seemed to be slowly decreasing even at checkpoint 500, so running for more training epochs may produce better results.
 
